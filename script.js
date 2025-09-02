@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
             activityCode.textContent = data.activityCode;
             invoiceInfoDiv.classList.remove('hidden');
         } else {
-            // Borra la información y oculta la sección si no hay coincidencia
             companyName.textContent = '';
             email.textContent = '';
             legalId.textContent = '';

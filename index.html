@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Factura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Factura 💳</h1>
+        <div class="card-input-container">
+            <label for="cardNumber">Últimos 4 dígitos de la tarjeta:</label>
+            <input type="text" id="cardNumber" maxlength="4" placeholder="Ej: 3622">
+        </div>
+        <div id="invoiceInfo" class="invoice-info hidden">
+            <div class="info-item">
+                <strong>Nombre:</strong>
+                <p id="companyName"></p>
+            </div>
+            <div class="info-item">
+                <strong>Correo:</strong>
+                <p id="email"></p>
+            </div>
+            <div class="info-item">
+                <strong>Cédula:</strong>
+                <p id="legalId"></p>
+            </div>
+            <div class="info-item">
+                <strong>Código de Actividad:</strong>
+                <p id="activityCode"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

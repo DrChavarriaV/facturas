@@ -7,30 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="animated-bg"></div>
     <div class="container">
-        <h1>Generador de Factura 💳</h1>
+        <h1 class="main-title">Datos para Facturas</h1>
+        <p class="subtitle">Para Dr. Chavarria</p>
+        
         <div class="card-input-container">
             <label for="cardNumber">Últimos 4 dígitos de la tarjeta:</label>
-            <input type="text" id="cardNumber" maxlength="4" placeholder="Ej: 3622">
+            <input type="text" id="cardNumber" maxlength="4" placeholder="Ej: 1234">
         </div>
+
         <div id="invoiceInfo" class="invoice-info hidden">
             <div class="info-item">
-                <strong>Nombre:</strong>
+                <span class="label">Nombre:</span>
                 <p id="companyName"></p>
             </div>
             <div class="info-item">
-                <strong>Correo:</strong>
+                <span class="label">Correo:</span>
                 <p id="email"></p>
             </div>
             <div class="info-item">
-                <strong>Cédula:</strong>
+                <span class="label">Cédula:</span>
                 <p id="legalId"></p>
             </div>
             <div class="info-item">
-                <strong>Código de Actividad:</strong>
+                <span class="label">Código de Actividad:</span>
                 <p id="activityCode"></p>
             </div>
         </div>
